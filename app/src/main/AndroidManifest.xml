@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.gdmec.s07150850.mycontacts_1">
+    <uses-sdk android:minSdkVersion="8"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MyContracts"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddContactsActivity"
+            android:label="@string/app_name">  </activity>
+        <activity android:name=".MyContactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UpdateContactsActivity"></activity>
+        <activity android:name=".ContactsMessageActivity"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+</manifest>
